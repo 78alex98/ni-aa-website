@@ -1,32 +1,21 @@
 import './App.css'
 import { Link, Route, Routes } from 'react-router-dom';
-
-function HomePage() {
-  return <h1> Home Page </h1>;
-}
-
-function ProjectsPage() {
-  return <h1> Projects Page </h1>;
-}
-
-function AboutPage() {
-  return <h1> About Page </h1>;
-}
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import NavBar from './components/NavBar'
 
 function App() {
   return (
-    <div>
-      <nav>
-        <Link to="/"> Home </Link> 
-        <Link to="/projects"> Projects </Link>
-        <Link to="/about"> About </Link>
-      </nav>
+    <div className="app">
+      <NavBar />
 
       <Routes>
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/about" element={<AboutPage />}/>
-        <Route path="/projects" element={<ProjectsPage />}/>
-        <Route path="*" element={<h1>404 Not Found</h1>}/>
+        <Route path="/" element={<Home/>} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </div>
   );

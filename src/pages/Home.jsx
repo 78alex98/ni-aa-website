@@ -1,57 +1,66 @@
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Link } from "react-router-dom";
+import houseFront from "../assets/house_front.jpeg";
+import sampleLandscape from "../assets/sample/sample_landscape.avif"
 
 export default function Home(){
     return (
         <div className="page">
-            {/* Aims to have an image with an introductory message */}
+            {/* Main Image in the Home Screen */}
+            <div className="main-home-image" 
+                 style={{ backgroundImage: `url(${sampleLandscape})`}}>
+            </div>
+
+            {/* Intro Section in the Home Screen */}
             <div className="intro-section">
-                <p>---------------------</p>
-                <h1>Intro Section blah blah blah</h1>
-                <h2>Also contains image</h2>
-                <h2>Should also have contact info</h2>
-                <Link to="/contact"> Contact Us! </Link>
-                <p>---------------------</p>
+                <div className="inner-intro-section">
+                    <div className="intro-text-section">
+                        <h1>NI&AA GROUP LLC.</h1>
+                        <p>
+                        NI&AA Group is a family owned business with over ## years of <br/>
+                        experience dedicated to delivering the best in remodeling and <br/>
+                        construction. We are located the general Miami-Dade area where <br/>
+                        we take pride in what we build. We work closely with our clients <br/>
+                        to make sure that their wish lists are completed all the way <br/>
+                        down to the last one! Our communication and efficiency here at <br/>
+                        make us perfect for any job you require! 
+                        <br/>
+                        If you want a result, we're here to deliver. <br/>
+                        </p>
+                    </div>
+                    
+                    <div className="intro-image-section">
+
+                    </div>
+                </div>
             </div>
 
-            {/* Aims to have a description about the company (with a pic)*/}
-            <div className="description-section">
-                <p>---------------------</p>
-                <h1>Description Section blah blah blah</h1>
-                <h2>Also contains image</h2>
-                <p>---------------------</p>
-            </div>
-
-            {/* Aims to have a some featured projects and link to projects page*/}
+            {/* Featured Projects Section in the Home Screen */}
             <div className="featured-projects-section">
-                <p>---------------------</p>
-                <h1>Featured Project Section blah blah blah</h1>
-                <h2>Also contains images</h2>
-                <Link to="/projects"> View More Projects </Link>
-                <p>---------------------</p>
+                <div className="inner-featured-projects-section">
+                    <h1>Featured Projects</h1>
+                </div>
             </div>
 
-            {/* Aims to showcase the type of services that the company does*/}
+            {/* Services Section in the Home Screen */}
             <div className="services-section">
-                <p>---------------------</p>
-                <h1>Services Section blah blah blah</h1>
-                <h2>Also contains images</h2>
-                <p>---------------------</p>
+                <div className="inner-services-section">
+                    <h1>Services</h1>
+                </div>
             </div>
 
-            {/* Aims to showcase a little bit about the relationships ascpect*/}
-            <div className="relationship-section">
-                <p>---------------------</p>
-                <h1>Relationship Section blah blah blah</h1>
-                <h2>Also contains images</h2>
-                <p>---------------------</p>
+            {/* Relationships Section in the Home Screen */}
+            <div className="relationships-section">
+                <div className="inner-relationships-section">
+                    <h1>Relationships</h1>
+                </div>
             </div>
 
-            {/* Aims to display FAQs*/}
-            <div className="faq-section">
-                <p>---------------------</p>
-                <h1>FAQs Section blah blah blah</h1>
-                <h2>I have no structure for this yet :/</h2>
-                <p>---------------------</p>
+            {/* FAQs Section in the Home Screen */}
+            <div className="faqs-section">
+                <div className="inner-faqs-section">
+                    <h1>FAQs (Frequently Asked Questions)</h1>
+                </div>
             </div>
         </div>
     );

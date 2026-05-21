@@ -1,17 +1,29 @@
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png';
 
 export default function NavBar() {
     return <nav className="navbar">
         <div className="navbar-container">
-            <Link to="/" className="navbar-brand"> 
-                NI & AA Group LLC
-            </Link>
+            <div className="left-navbar-container">
+                <div className="navbar-links">
+                    <Link className="navbar-link" to="/"> HOME </Link>
+                    <Link className="navbar-link" to="/projects"> PROJECTS </Link>
+                </div>
+            </div>
 
-            <div className="navbar-links">
-                <Link to="/"> Home </Link>
-                <Link to="/projects"> Projects </Link>
-                <Link to="/about"> About </Link>
-                <Link to="/contact"> Contact </Link>
+            <div className="center-navbar-container">
+                <Link to="/" className="navbar-logo">
+                    <div className="navbar-logo-inner">
+                        <img src={logo} alt="NI & AA Group LLC Logo" />
+                    </div>
+                </Link>
+            </div>
+
+            <div className="right-navbar-container">
+                <div className="navbar-links">
+                    <Link className="navbar-link" to="/about"> ABOUT </Link>
+                    <Link className="navbar-link" to="/contact"> CONTACT </Link>
+                </div>
             </div>
         </div>
     </nav>;

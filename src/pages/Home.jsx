@@ -2,6 +2,9 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Link } from "react-router-dom";
 import houseFront from "../assets/house_front.jpeg";
 import sampleLandscape from "../assets/sample/sample_landscape.avif"
+import sampleHouse2 from "../assets/sample/sample_house_2.webp"
+import sampleHouse3 from "../assets/sample/sample_house_3.jpg"
+import sampleHouse4 from "../assets/sample/sample_house_4.webp"
 
 export default function Home(){
     return (
@@ -17,20 +20,29 @@ export default function Home(){
                     <div className="intro-text-section">
                         <h1>NI&AA GROUP LLC.</h1>
                         <p>
-                        NI&AA Group is a family owned business with over ## years of <br/>
+                        NI&AA Group is a family owned business with over 12 years of <br/>
                         experience dedicated to delivering the best in remodeling and <br/>
                         construction. We are located the general Miami-Dade area where <br/>
                         we take pride in what we build. We work closely with our clients <br/>
                         to make sure that their wish lists are completed all the way <br/>
                         down to the last one! Our communication and efficiency here at <br/>
                         make us perfect for any job you require! 
-                        <br/>
-                        If you want a result, we're here to deliver. <br/>
+                        <br/><br/>
+                        <strong> If you want a result, we're here to deliver. </strong> <br/>
                         </p>
+                        <Link to="/contact" className="intro-contact-btn">Contact Us!</Link>
                     </div>
                     
                     <div className="intro-image-section">
-
+                        <div className="inner-intro-image-section">
+                            <div className="intro-image-left">
+                                <img className="intro-img-1" src={sampleHouse2} alt="Left Image" />
+                            </div>
+                            <div className="intro-image-right">
+                                <img className="intro-img-2" src={sampleHouse3} alt="Right Top Image" />
+                                <img className="intro-img-3" src={sampleHouse4} alt="Right Bottom Image" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

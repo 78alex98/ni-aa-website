@@ -13,6 +13,11 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.page {
+  position: relative;
+  z-index: 1;
+}
+
 /*
 ----------------------------------------
 - Navbar
@@ -148,6 +153,84 @@ body {
 .navbar-link:active {
   color: white;
   text-decoration: none;
+}
+
+/*
+----------------------------------------
+- Footer
+----------------------------------------
+*/
+
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: #111;
+  color: white;
+  padding: 3rem 4rem 1.5rem;
+  border-top: 3px solid #222291;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 280px;
+}
+
+.footer-company-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.footer-column p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    text-align: center;
+}
+
+.footer-link {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    text-align: center;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.25rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 /*

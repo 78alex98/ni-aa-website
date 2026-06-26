@@ -962,9 +962,8 @@ body {
 .contact-info-cards {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -973,20 +972,20 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    border: 3px solid white;
-    border-radius: 4px;
-    padding: 1.5rem 2rem;
-    min-width: 180px;
     text-align: center;
-    transition: background-color 0.2s ease;
+    padding: 1rem;
+    /* border and min-width removed */
 }
 
 .contact-info-card:hover {
-    background-color: rgba(255,255,255,0.08);
+    background-color: transparent; /* remove hover tint too */
 }
 
-.contact-info-card-icon {
-    font-size: 1.75rem;
+.contact-info-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 0.25rem;
 }
 
 .contact-info-card-label {
@@ -1012,4 +1011,307 @@ body {
 .contact-info-link:hover {
     opacity: 0.75;
     text-decoration: underline;
+}
+
+/*
+----------------------------------------
+- About Page
+----------------------------------------
+*/
+
+.main-about-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero-overlay {
+    text-align: center;
+}
+
+.about-hero-overlay h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 24px rgba(0,0,0,0.6);
+}
+
+.about-section {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.40);
+    padding: 3px;
+}
+
+.about-first-section {
+    margin-top: 75vh;
+}
+
+.inner-about-section {
+    background-color: #222291;
+    padding: 3rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.inner-about-section--reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text-section {
+    color: white;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.about-text-section h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.about-text-section h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.about-text-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.about-image-section {
+    flex: 1;
+    display: flex;
+    min-width: 0;
+    height: 100%;
+    padding: 0.5rem;
+    border: 3px solid white;
+    border-radius: 4px;
+}
+
+.inner-about-image-section {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 3px;
+    background-color: white;
+    padding: 3px;
+}
+
+.about-image-single {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.about-image-single img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-image-left {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.about-image-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-image-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.about-image-right img {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    display: block;
+}
+
+/*
+----------------------------------------
+- Projects Page
+----------------------------------------
+*/
+
+.main-projects-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-hero-overlay {
+    text-align: center;
+}
+
+.projects-hero-overlay h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 24px rgba(0,0,0,0.6);
+}
+
+/* Intro Section */
+.projects-intro-section {
+    position: relative;
+    z-index: 1;
+    margin-top: 75vh;
+    background-color: white;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.40);
+    padding: 3px;
+}
+
+.inner-projects-intro-section {
+    background-color: #222291;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.inner-projects-intro-section h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.inner-projects-intro-section p {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 760px;
+}
+
+/* Projects Grid */
+.projects-grid-section {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.40);
+    padding: 3px;
+}
+
+.inner-projects-grid-section {
+    background-color: #222291;
+    padding: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project-card-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-card-image img {
+    transform: scale(1.05);
+}
+
+.project-card-body {
+    padding: 1rem 1.1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.project-card-location {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-card-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.project-card-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.88rem;
+    line-height: 1.6;
 }

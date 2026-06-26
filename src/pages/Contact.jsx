@@ -1,5 +1,10 @@
 import { useState } from "react";
+
 import sampleLandscape from "../assets/sample/sample_landscape.avif";
+import emailIcon from "../assets/icons/email.png"
+import locationIcon from "../assets/icons/location.png"
+import phoneIcon from "../assets/icons/phone.png"
+import presidentIcon from "../assets/icons/president.png"
 
 export default function Contact() {
     const [formData, setFormData] = useState({ name: "", subject: "", description: "" });
@@ -118,26 +123,26 @@ export default function Contact() {
                     </div>
                     <div className="contact-info-cards">
                         <div className="contact-info-card">
-                            <div className="contact-info-card-icon">👤</div>
+                            <img src={presidentIcon} alt="President" className="contact-info-icon" />
                             <p className="contact-info-card-label">President</p>
-                            <p className="contact-info-card-value">Nino Valko</p>
+                            <p className="contact-info-card-value">Nivio Valdes </p>
                         </div>
                         <div className="contact-info-card">
-                            <div className="contact-info-card-icon">📞</div>
+                            <img src={phoneIcon} alt="Phone" className="contact-info-icon" />
                             <p className="contact-info-card-label">Phone</p>
                             <a className="contact-info-card-value contact-info-link" href="tel:7866098310">
-                                (786) 609-8310
+                                (786)-609-8310
                             </a>
                         </div>
                         <div className="contact-info-card">
-                            <div className="contact-info-card-icon">✉️</div>
+                            <img src={emailIcon} alt="Email" className="contact-info-icon" />
                             <p className="contact-info-card-label">Email</p>
                             <a className="contact-info-card-value contact-info-link" href="mailto:your@email.com">
-                                your@email.com
+                                niviovaldes@gmail.com
                             </a>
                         </div>
                         <div className="contact-info-card">
-                            <div className="contact-info-card-icon">📍</div>
+                            <img src={locationIcon} alt="Location" className="contact-info-icon" />
                             <p className="contact-info-card-label">Location</p>
                             <p className="contact-info-card-value">Miami-Dade, FL</p>
                         </div>

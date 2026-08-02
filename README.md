@@ -4,7 +4,8 @@ This is the official website for **NI&AA Group LLC**, a family-owned remodeling 
 
 ## About
 
-The site is built with **React** and styled with custom CSS.
+The site is built with **React** and styled with custom CSS. The work in progress site is currently deployed to
+Github Pages.
 
 ## Features
 

@@ -4,7 +4,7 @@ This is the official website for **NI&AA Group LLC**, a family-owned remodeling 
 
 ## About
 
-The site is built with **React** (using `react-router-dom` for navigation and `@react-spring/parallax` for parallax scrolling effects) and styled with custom CSS.
+The site is built with **React** and styled with custom CSS.
 
 ## Features
 
@@ -16,14 +16,6 @@ The website displays:
 - **Services** — an overview of the remodeling and construction services offered
 - **Relationships** — partners, vendors, or trusted collaborators
 - **FAQs** — answers to frequently asked questions
-
-## Tech Stack
-
-- React
-- Vite
-- react-router-dom
-- @react-spring/parallax
-- CSS (custom styling, Plus Jakarta Sans font)
 
 ## Getting Started
 
@@ -54,4 +46,4 @@ src/
 
 ## Status
 
-Work in progress — several sections (Featured Projects, Services, Relationships, FAQs) are placeholders pending final content.
+!!! Work in progress !!! — several sections (Featured Projects, Services, Relationships, FAQs) are placeholders pending final content.

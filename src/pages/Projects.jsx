@@ -1,47 +1,60 @@
 import sampleLandscape from "../assets/sample/sample_landscape.avif";
 
+import ichavezFrontHouse from '../assets/Images/6161_11_IChavez_Front_House.jpeg'
+import ichavezBathroom from '../assets/Images/6161_11_IChavez_Bathroom.jpg'
+import ichavezKitchen from '../assets/Images/6161_11_IChavez_Kitchen.jpg'
+import ichavezPool from '../assets/Images/6161_11_IChavez_Pool.jpeg'
+import cchavezRoof from '../assets/Images/5841_13_CChavez_New_Roof.jpeg'
+import cchavezAddition from '../assets/Images/5841_13_CChavez_New_Addition.jpeg'
+
 const projects = [
     {
         id: 1,
-        title: "Kitchen Remodel",
-        location: "Coral Gables, FL",
-        description: "Full kitchen renovation including custom cabinetry, quartz countertops, and modern fixtures.",
-        image: sampleLandscape,
+        title: "Kitchen Renovation",
+        location: "West Miami, FL",
+        description: "Full kitchen renovation including cabinetry, countertops, and new appliances.",
+        image: ichavezKitchen,
+        imagePosition: "50% 50%",
     },
     {
         id: 2,
         title: "Bathroom Renovation",
-        location: "Doral, FL",
+        location: "West Miami, FL",
         description: "Complete bathroom overhaul with walk-in shower, new tiling, and updated plumbing.",
-        image: sampleLandscape,
+        image: ichavezBathroom,
+        imagePosition: "50% 75%",
     },
     {
         id: 3,
-        title: "Home Addition",
-        location: "Hialeah, FL",
-        description: "800 sq ft addition including a new bedroom, bathroom, and expanded living area.",
-        image: sampleLandscape,
+        title: "New Pool",
+        location: "West Miami, FL",
+        description: "New pool built into existing backyard with new tiling and a complete remodel of the sorrounding area.",
+        image: ichavezPool,
+        imagePosition: "50% 30%",
     },
     {
         id: 4,
         title: "Exterior Facelift",
-        location: "Miami, FL",
-        description: "Full exterior repaint, new shutters, updated landscaping, and driveway resurfacing.",
-        image: sampleLandscape,
+        location: "West Miami, FL",
+        description: "Full exterior repaint, new lights, new doors, updated roofing, and new driveway.",
+        image: ichavezFrontHouse,
+        imagePosition: "50% 50%",
     },
     {
         id: 5,
-        title: "Flooring Installation",
-        location: "Kendall, FL",
-        description: "Whole-home porcelain tile installation across 2,200 sq ft of living space.",
-        image: sampleLandscape,
+        title: "New Roofing",
+        location: "West Miami, FL",
+        description: "Complete new roof which included the installation of new tile and insolation.",
+        image: cchavezRoof,
+        imagePosition: "50% 50%",
     },
     {
         id: 6,
-        title: "Roof Replacement",
-        location: "Homestead, FL",
-        description: "Full roof tear-off and replacement with impact-resistant shingles rated for hurricane winds.",
-        image: sampleLandscape,
+        title: "Home Addition",
+        location: "West Miami, FL",
+        description: "Newly created house addition included with an interior renovation, electricity, plumbing, and A/C.",
+        image: cchavezAddition,
+        imagePosition: "50% 50%",
     },
     {
         id: 7,
@@ -49,6 +62,7 @@ const projects = [
         location: "Brickell, FL",
         description: "Ground-up interior build-out for a 1,500 sq ft professional office space.",
         image: sampleLandscape,
+        imagePosition: "50% 50%",
     },
     {
         id: 8,
@@ -56,6 +70,7 @@ const projects = [
         location: "Pinecrest, FL",
         description: "Custom outdoor patio with pergola, pavers, outdoor kitchen rough-in, and lighting.",
         image: sampleLandscape,
+        imagePosition: "50% 50%",
     },
 ];
 
@@ -90,7 +105,11 @@ export default function Projects() {
                         {projects.map((project) => (
                             <div className="project-card" key={project.id}>
                                 <div className="project-card-image">
-                                    <img src={project.image} alt={project.title} />
+                                    <img src={project.image} alt={project.title} 
+                                    style={{ 
+                                        objectPosition: project.imagePosition,
+                                        transform: `scale(${project.imageScale})`
+                                    }}/>
                                 </div>
                                 <div className="project-card-body">
                                     <p className="project-card-location">{project.location}</p>

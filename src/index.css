@@ -336,8 +336,8 @@ body {
     display: block;
 }
 
-.intro-img-1 { object-position: 50% 50%; }
-.intro-img-2 { object-position: 50% 60%; }
+.intro-img-1 { object-position: 50% 70%; }
+.intro-img-2 { object-position: 50% 50%; }
 .intro-img-3 { object-position: 50% 90%; }
 
 .intro-contact-btn {
@@ -625,6 +625,7 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+    object-position: 50% 55%;
 }
 
 .relationship-image-right {
@@ -1272,7 +1273,7 @@ body {
 
 .project-card-image {
     width: 100%;
-    height: 180px;
+    height: 350px;
     overflow: hidden;
 }
 

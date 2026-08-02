@@ -1,16 +1,57 @@
-# React + Vite
+# NI&AA Group LLC. Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the official website for **NI&AA Group LLC**, a family-owned remodeling and construction company serving the greater Miami-Dade area.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The site is built with **React** (using `react-router-dom` for navigation and `@react-spring/parallax` for parallax scrolling effects) and styled with custom CSS.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The website displays:
 
-## Expanding the ESLint configuration
+- **About the Company** — background, experience, and mission of NI&AA Group LLC
+- **Projects** — a showcase of featured/completed remodeling and construction work
+- **Contact Information** — ways for potential clients to get in touch and request services
+- **Services** — an overview of the remodeling and construction services offered
+- **Relationships** — partners, vendors, or trusted collaborators
+- **FAQs** — answers to frequently asked questions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- Vite
+- react-router-dom
+- @react-spring/parallax
+- CSS (custom styling, Plus Jakarta Sans font)
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Project Structure
+
+```
+src/
+├── assets/
+│   └── Images/         # site photos (project & house images)
+├── components/
+│   ├── Footer.jsx
+│   └── NavBar.jsx
+├── pages/
+│   ├── About.jsx        # about the company
+│   ├── Contact.jsx       # contact information
+│   ├── Home.jsx          # landing page (intro, projects, services, relationships, FAQs)
+│   └── Projects.jsx      # projects showcase
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+## Status
+
+Work in progress — several sections (Featured Projects, Services, Relationships, FAQs) are placeholders pending final content.

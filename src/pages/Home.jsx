@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
-import houseFront from "../assets/house_front.jpeg";
 import sampleLandscape from "../assets/sample/sample_landscape.avif"
 import sampleHouse2 from "../assets/sample/sample_house_2.webp"
 import sampleHouse3 from "../assets/sample/sample_house_3.jpg"
 import sampleHouse4 from "../assets/sample/sample_house_4.webp"
+import ichavezFrontHouse from '../assets/Images/6161_11_IChavez_Front_House.jpeg'
+import ichavezBathroom from '../assets/Images/6161_11_IChavez_Bathroom.jpg'
+import ichavezKitchen from '../assets/Images/6161_11_IChavez_Kitchen.jpg'
+
 import houseIcon from "../assets/icons/home.png"
 import constructionIcon from "../assets/icons/construction.png"
 import remodelingIcon from "../assets/icons/remodeling.png"
@@ -47,10 +50,10 @@ export default function Home(){
                     <div className="intro-image-section">
                         <div className="inner-intro-image-section">
                             <div className="intro-image-left">
-                                <img className="intro-img-1" src={sampleHouse2} alt="Left Image" />
+                                <img className="intro-img-1" src={ichavezBathroom} alt="Left Image" />
                             </div>
                             <div className="intro-image-right">
-                                <img className="intro-img-2" src={sampleHouse3} alt="Right Top Image" />
+                                <img className="intro-img-2" src={ichavezFrontHouse} alt="Right Top Image" />
                                 <img className="intro-img-3" src={sampleHouse4} alt="Right Bottom Image" />
                             </div>
                         </div>
@@ -157,7 +160,7 @@ export default function Home(){
                     <div className="relationship-image-section">
                         <div className="inner-relationship-image-section">
                             <div className="relationship-image-left">
-                                <img className="relationship-img-1" src={sampleHouse2} alt="Left Image" />
+                                <img className="relationship-img-1" src={ichavezKitchen} alt="Left Image" />
                             </div>
                             <div className="relationship-image-right">
                                 <img className="relationship-img-2" src={sampleHouse3} alt="Right Image" />
